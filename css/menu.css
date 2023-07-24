@@ -21,7 +21,7 @@ ul {
     --textsblack:#333333;
 }
 .container{
-    max-width: 1400px;
+    max-width: 1300px;
     width: 100%;
     margin: auto;
     padding: 0 15px;
@@ -67,129 +67,50 @@ ul {
 }
 
 
-.header__content{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80vh;
-}
-.header__desc{
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-}
-.header__desc-about-title{
-    color: var(--white);
-    font-family: var(--fm-1);
-    font-weight: 700;
-    line-height: 30px;
-    text-transform: capitalize;
-    letter-spacing: 0.92px;
-    font-size: 23px;
-}
-.header__desc-title{
-    color: var(--white);
-    font-family: var(--fm-1);
-    font-weight: 700;
-    font-size: 90px;
-    line-height: 117px;
-    letter-spacing: 3.6px;
-    text-transform: capitalize;
-    width: 600px;
-}
-.header__desc-text{
-    color: var(--white);
-    font-family: var(--fm-2);
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.64px;
-    line-height: 28px;
-    opacity: 0.699999988079071;
-    max-width: 453px;
-    width: 100%;
-}
-.header__desc-btn{
-    color: var(--white);
-    font-family: var(--fm-1);
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.8px;
-    text-transform: capitalize;
-    border: 1px solid var(--white);
-    padding: 10px 40px;
-    border-radius: 100px;
-    transition: .5s;
-    width: 200px;
-}
 
-.header__desc-btn:hover{
-    background-color: var(--white);
-    color: var(--primary-color);
-}
+
 /* Header */
 
 
 
 /* Main */
-/* Popular */
- .popular{
-    background: rgba(248, 248, 248, 1);
-    padding: 120px 0;
-    width: 100%;
+
+/* Menu */
+.menu{
+    padding: 120px;
 }
-.popular__nav{
-    color: var(--primary-color);
-    font-family: var(--fm-1);
-    font-weight: 500;
-    font-size: 48px;
-    letter-spacing: 1.44px;
+.links{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.link{
+    color: #B0B0B0;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
     text-transform: capitalize;
+}
+.linkk{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 30px;
-}
-.popular__icons{
-    transform: translateX(-75px);
-}
-.popular__cards{
-    display: flex;
-    column-gap: 20px;
-    align-items: center;
-}
-.popular__icons{
-    width: 100px;
-    display: flex;
-    column-gap: 20px; 
-}
-.popular__icon{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    border: 1px solid rgba(100, 100, 100, 1);
-    color: rgba(100, 100, 100, 1);
-}
-.popular__icon:hover{
-    border: 1px solid rgba(187, 35, 57, 1);
-    color: black;
+    column-gap: 10px;
 }
 
-.popular__card{
-    max-width: 310px;
-    width: 100%;
-    height: 396px;
-    background-color: var(--white);
-    border-radius: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 20px 40px 20px;
+.link:hover{
+    color: var(--primary-color);
 }
- .card__desc{
+.linkk::after{
+    content: "";
+    display: block;
+    width: 1.5px;
+    height: 18px;
+    background: #B0B0B0;
+}
+.card__desc{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -212,58 +133,61 @@ ul {
     font-weight: 700;
     font-size: 24px;
 }
-.popular__logo{
-    transform: translateY(320px) translateX(-125px);
-} 
-
-/* Popular */
-
-
-
-/* Menu */
-.menu{
-    padding: 120px;
+.basicwindow{
+    padding: 60px 0;
+    display: flex;
+    column-gap: 40px;
 }
-.menu__title{
-    color: var(--primary-color);
+.basicwindow-left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 544px;
+
+}
+.basicwindow-right{
+    display: flex;
+    column-gap: 32px;
+    row-gap: 40px;
+}
+
+.iconn{
+    width: 90px;
+    height: 90px;
+    transform: translateX(310px);
+}
+.basicwindow__menu-card{
+    width: 428px;
+    height: 844px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px;
+    row-gap: 20px;
+}
+.menu__card-title{
+    width: 348px;
+    color: var(--white);
     font-family: var(--fm-1);
     font-weight: 500;
-    font-size: 48px;
-    letter-spacing: 1.44px;
-    text-transform: capitalize;
-    line-height: 62.4px;
+    line-height: 54px;
+    font-size: 40px;
+    
 }
-.menu__list{
-    display: flex;
-    column-gap: 20px;
-    margin: 60px 0 50px 0;
-}
-.menu__link{
-    color: var(--commentsblack);
-    font-size: 16px;
-    font-family: var(--fm-2);
-    font-weight: 600;
-    letter-spacing: 0.8px;
-    line-height: 28px;
-    text-transform: capitalize;
-    border: 1px solid var(--primary-color);
-    border-radius: 100px;
-    padding: 10px 20px;
-    transition: .5s;
-} 
-.menu__link:hover{
-    background-color: var(--primary-color);
-    color: var(--white);
+.nav__link-btn{
+    max-width: 150px;
+    width: 100%;
 }
 
 .menu__cards{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 20px;
+    row-gap: 50px;
     margin-bottom: 20px;
 }
-
 .menu__card{
-    max-width: 310px;
+    max-width: 300px;
     width: 100%;
     height: 396px;
     background-color: var(--white);
@@ -538,6 +462,7 @@ p {
 .instagram__desc{
     display: flex;
     flex-direction: column;
+    padding-left: 250px;
 }
 .instagram__mini-title{
     color: var(--commentsblack);
@@ -795,4 +720,3 @@ p {
 
 
 
-/* Main */

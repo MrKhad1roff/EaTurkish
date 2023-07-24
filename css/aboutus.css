@@ -1,0 +1,324 @@
+@import url(../css/fonts.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+:root {
+    --fm-1: "Cera Round Pro";
+    --fm-2: "Open Sans";
+    --fm-3: "Inter";
+    --fm-4: "Roboto";
+    --primary-color:#BB2339;
+    --white:white;
+    --commentsblack:#242424;
+    --textsblack:#333333;
+}
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+/* Header */
+.header{
+    background-color: var(--primary-color);
+}
+
+.nav__link{
+    color: var(--white);
+    font-family: var(--fm-2);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.64px;
+    padding: 10px 20px;
+    transition: .5s;
+    border-radius: 50px;
+    border: 1px solid var(--primary-color);
+}
+.nav__link:hover{
+    
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+.nav__link-btn{
+    color: var(--white);
+    font-family: var(--fm-2);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    border: 1px solid var(--white);
+    padding: 10px 40px;
+    border-radius: 100px;
+    transition: .5s;
+    
+}
+.nav__link-btn:hover{
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+
+
+
+/* Header */
+
+
+
+/* Main */
+
+/* Menu */
+
+.links{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.link{
+    color: #B0B0B0;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: capitalize;
+}
+.linkk{
+    display: flex;
+    column-gap: 10px;
+}
+
+.link:hover{
+    color: var(--primary-color);
+}
+.linkk::after{
+    content: "";
+    display: block;
+    width: 1.5px;
+    height: 18px;
+    background: #B0B0B0;
+
+}
+/* About */
+.about{
+    width: 100%;
+    padding-top: 80px;
+}
+.about__basic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.vector{
+    margin: 8px 0  50px 0;
+}
+.about__title{
+    font-family: var(--fm-1);
+    color: var(--primary-color);
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 1.44px;
+    text-transform: capitalize;
+    line-height: 62.4px;
+}
+.about__desc-text{
+    color: #242424;
+    font-family: var(--fm-2);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+    opacity: 0.800000011920929;
+    max-width: 720px;
+    width: 100%;
+    text-align: justify;
+}
+.about__desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   
+
+}
+
+
+
+/* contact */
+
+.contact{
+    height: 400px;
+}
+    .contact__container{
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        background: var(--primary-color);
+        padding: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 24px;
+        transform: translateY(165px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.40);
+        box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.20);
+    }
+    .contact__mini-title{
+        font-family: var(--fm-1);
+        font-weight: 700;
+        font-size: 23px;
+        letter-spacing: 0.92px;
+        line-height: 29.9px;
+        color: var(--white);
+    }
+    .contact__title{
+        color: var(--white);
+        text-align: center;
+        font-family: var(--fm-1);
+        font-weight: 500;
+        font-size: 48px;
+        letter-spacing: 1.44px;
+        line-height: 62.4px;
+    }
+    .contact__text{
+        color: var(--white);
+        font-family: var(--fm-2);
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.64px;
+        line-height: 28px;
+        margin-bottom: 50px;
+    }
+    .contact__email{
+        width: 635px;
+        border-radius: 100px;
+        color: white;
+        background: transparent;
+        border: 1px solid rgba(245, 239, 219, 0.50);
+        padding: 12px 0;
+        font-family: var(--fm-1);
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.64px;
+        line-height: 28px;
+        padding-left: 19px;
+    }
+    .buttons{
+        display: flex;
+        column-gap: 32px;
+        align-items: center;
+    }
+    .contact__btn{
+        background: var(--primary-color);
+        border: 1px solid white;
+        color: white;
+    }
+/* contact */
+
+
+
+
+.footer{
+    background:  var(--primary-color) ;
+    
+}
+.footer__container{
+    min-height: 610px;
+    height: 100%;
+    display: flex;
+    column-gap: 80px;
+    justify-content: center;
+    align-items:flex-end;
+    padding-bottom: 60px;
+}
+.contact__us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-90px);
+}
+.working__hours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-65px);
+}
+.footer__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 38px;
+}
+
+.title{
+    color: var(--white);
+    font-family: var(--fm-1);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 1.28px;
+    line-height: 35px;
+}
+.text{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--fm-2);
+    line-height: 26px;
+    letter-spacing: 0.64px;
+}
+.text__logo{
+    width: 438px;
+    text-align: center;
+}
+.footer__logo-img{
+    width: 336px;
+    height: 117px;
+}
+.logo__icons{
+    display: flex;
+    column-gap: 16px;
+}
+.footer__icon{
+    color: var(--white);
+}
+.contact__adress{
+    margin: 20px 0 10px 0;
+}
+.text.adress1{
+    margin-top: 20px;
+}
+.text.adress2{
+    margin-bottom: 10px;
+}
+
+.footer__text{
+    text-align: center;
+    padding-bottom: 30px;
+    transform: translateX(30px);
+}
+
+
+
+
