@@ -716,7 +716,6 @@ p {
 }
 .footer__container{
     min-height: 610px;
-    height: 100%;
     display: flex;
     column-gap: 80px;
     justify-content: center;
